@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #6a9eda;
+  color: #1a1a1a;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: azure;
+  z-index: 1000;
+  padding: 5px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  max-width: 80px;
+}
+
+/* hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Tela cheia */
+  padding: 40px;
+  gap: 50px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+}
+
+/* about */
+
+.aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Tela cheia */
+  padding: 40px;
+  gap: 50px;
+  background-color: azure;
+}
+
+.about {
+  flex: 1;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-height: 300px;
+  }
+}
+
+/* find */
+
+.findhelp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Tela cheia */
+  padding: 40px;
+  gap: 50px;
+}
+
+.find {
+  flex: 1;
+}
+
+.find h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.find p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.find-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+}
+
+/* books */
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 245px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.book {
+  text-align: center;
+}
+
+.book img {
+  width: 150%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 4rem;
+}
+
+.bookrecomend {
+  background-color: azure;
+}
+
+.bookrecomend h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 8rem;
+}
